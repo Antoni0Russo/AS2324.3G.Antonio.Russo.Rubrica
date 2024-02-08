@@ -39,7 +39,12 @@
 
                         cont++;
                         break;
-
+                    case 2:
+                        for(int i = 0; i < cont; i++)
+                        {
+                            Console.WriteLine($"-{i+1} -Nicname:{nickName[i]} -Nome:{nome[i]}  -Cognome:{cognome[i]} -Simpatia:{simpatia[i]} -annoDiNacita:{annoDiNacita[i]} -email:{email[i]}"); 
+                        }
+                        break;
 
 
                 }
