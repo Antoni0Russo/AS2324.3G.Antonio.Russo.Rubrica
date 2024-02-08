@@ -29,7 +29,7 @@
                         cognome [cont] = Console.ReadLine();
                         Console.WriteLine("inserisci il nickname");
                         nickName[cont] = Console.ReadLine();
-                        Console.WriteLine("\n ARAMENTRI FACOLTATIVI");
+                        Console.WriteLine("\n PARAMENTRI FACOLTATIVI");
                         Console.WriteLine("inserisci la simpatia Tra 1-5");
                         simpatia[cont]= Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("inserisci anno di nascita yyyy");
