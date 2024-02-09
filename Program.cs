@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            string ricerca;
             int scelta ;
             int cont= 0;
             int[] rubrica = new int[100];
@@ -45,6 +46,19 @@
                             Console.WriteLine($"-{i+1} -Nicname:{nickName[i]} -Nome:{nome[i]}  -Cognome:{cognome[i]} -Simpatia:{simpatia[i]} -annoDiNacita:{annoDiNacita[i]} -email:{email[i]}"); 
                         }
                         break;
+                    case 3:
+                        Console.WriteLine("inserisci il nickname in questione :");
+                        ricerca = Convert.ToString(Console.ReadLine());
+                        for (int i = 0; i < cont; i++)
+                        {
+                            Console.WriteLine("PERSONE CON QUESTO NICKNAME");
+                            if (ricerca == nickName[i])
+                            {
+                                Console.WriteLine($"-{i + 1} -Nicname:{nickName[i]} -Nome:{nome[i]}  -Cognome:{cognome[i]} -Simpatia:{simpatia[i]} -annoDiNacita:{annoDiNacita[i]} -email:{email[i]}");
+                            }
+                           
+                        }
+                            break;
 
 
                 }
