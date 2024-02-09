@@ -63,6 +63,7 @@
 
                 }
             } while (scelta != 0);
+            Console.WriteLine("grazie!");
         }
     }
 }
