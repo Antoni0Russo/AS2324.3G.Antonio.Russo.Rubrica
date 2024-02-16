@@ -18,7 +18,7 @@
 
             do
             {
-                Console.WriteLine("1) Inserimento completo di un nominativo \n 2) Elenco dei nominativi inseriti \n 3) Ricerca di un nominativo in base al Nickname \n PER USCIRE 0");
+                Console.WriteLine("1) Inserimento completo di un nominativo \n 2) Elenco dei nominativi inseriti \n 3) Ricerca di un nominativo in base al Nickname\n 4) Ricerca di un nominativo in base al Nickname in CASE SENSITIVE \n PER USCIRE 0");
                 scelta = Convert.ToInt32(Console.ReadLine());
                 switch (scelta)
                 {
@@ -59,6 +59,21 @@
                            
                         }
                             break;
+                    case 4:
+                        Console.WriteLine("inserisci il nickname in questione :");
+                        ricerca = Convert.ToString(Console.ReadLine());
+                        for (int i = 0; i < cont; i++)
+                        {
+                            Console.WriteLine("PERSONE CON QUESTO NICKNAME");
+                            if (ricerca.ToUpper() == nickName[i].ToUpper())
+                            {
+                                Console.WriteLine($"-{i + 1} -Nicname:{nickName[i]} -Nome:{nome[i]}  -Cognome:{cognome[i]} -Simpatia:{simpatia[i]} -annoDiNacita:{annoDiNacita[i]} -email:{email[i]}");
+                            }
+
+                        }
+                        break;
+                    
+
 
 
                 }
